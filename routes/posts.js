@@ -16,7 +16,7 @@ router.post('/', async (req, res) => {
     })
 
     try {
-        const postToSave = await postData.save()
+        const postToSave = await postData.save() // .limit(10)
         res.send(postToSave)
     } catch(err) {
         res.send({message: err})
