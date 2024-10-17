@@ -10,6 +10,10 @@ const PostSchema = mongoose.Schema({
         type: String,
         required: true
     },
+    text: {
+        type: String,
+        required: true
+    },
     hashtag: {
         type: String,
         required: true
